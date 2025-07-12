@@ -19,3 +19,20 @@
 - HTTPs
 - Tree Shaking - remove unused code
 - Different dev and prod bundlers
+
+
+# Namaste Food
+/**
+ * Header
+ *  - Logo
+ *  - Nav items
+ * Body
+ *  - Search
+ *  - RestaurantContainer
+ *     - RestaurantCard
+ * Footer
+ *  - Copyright
+ *  - Links
+ *  - Address
+ *  - Contact
+ */
