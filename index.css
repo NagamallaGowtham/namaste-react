@@ -26,3 +26,7 @@ body {
     width: 100%;
     padding: 20px;
 }
+
+.filter {
+    margin: 20px 0;
+}
