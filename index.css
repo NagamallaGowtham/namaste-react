@@ -29,4 +29,6 @@ body {
 
 .filter {
     margin: 20px 0;
+    display: flex;
+    gap: 20px;
 }
