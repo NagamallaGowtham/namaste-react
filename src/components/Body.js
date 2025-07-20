@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard"
 import resList from "../utils/mockData"
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 const Body = () => {
   const [listOfRes, setListOfRes] = useState([])
@@ -30,6 +31,7 @@ const Body = () => {
     // Optional Chaining
     setListOfRes(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     setSearchList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    console.log(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
   }
 
   return (
@@ -44,7 +46,7 @@ const Body = () => {
       <div className="res-container">
         {
             searchList.map((restaurant) => (
-                <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+                <Link key={restaurant.info.id} to={`/restaurants/${restaurant.info.id}`}><RestaurantCard  resData={restaurant} /></Link>
             ))
         }
       </div>
