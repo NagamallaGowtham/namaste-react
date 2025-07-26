@@ -11,7 +11,7 @@ const RestaurantCategoryItem = ({maintitle, items, categories = {}}) => {
     }
   return (
     <>
-        <div className="category">
+        <div className="category border-b-2 border-gray-200">
             <button className="flex justify-between py-4 w-full cursor-pointer" onClick={handleToggle}>
                 <span className="font-bold text-xl">{maintitle ? maintitle : title} ({dataToMap.length})</span>
                 <span>⬇️</span>
@@ -21,7 +21,7 @@ const RestaurantCategoryItem = ({maintitle, items, categories = {}}) => {
                     <div className="items flex items-center gap-5 border-b-2 border-gray-200 pb-4 my-4 last:border-b-0" key={item?.card?.info?.id}>
                         <div className="w-10/12">
                             <h3 className="font-bold">{item?.card?.info?.name}</h3>
-                            <p className="font-medium">{item?.card?.info?.price / 100} Rs</p>
+                            <p className="font-medium">{item?.card?.info?.price || item?.card?.info?.defaultPrice / 100} Rs</p>
                             <p>{item?.card?.info?.description}</p>
                         </div>
                         <div className="w-2/12">
