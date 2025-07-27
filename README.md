@@ -52,3 +52,17 @@ import {Component} from "path";
 
 # React Hooks
 (Normal JS utility functions)
+
+
+# 2 types Routing in web apps
+- Client Side Routing
+- Server Side Routing
+
+
+# Redux Toolkit
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+- Create Slice (cartSlice)
+- dispatch Action
+- Selector
