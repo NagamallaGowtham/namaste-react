@@ -66,3 +66,23 @@ import {Component} from "path";
 - Create Slice (cartSlice)
 - dispatch Action
 - Selector
+
+
+# Types of testing (developer only)
+- Unit Testing - means testing one unit or component in an isolation.
+- Integration Testing
+- End to End Testing - e2e testing
+
+
+
+# Setting up testing in our app
+- Install React testing Library
+- Install jest
+- Install Babel dependencies
+- Configure Babel
+- Configure Parcel Config file to disable default babel transpilation
+- Jest configuration 
+- Install jsdom library
+- Install @babel/preset-react to make JSX work in test cases
+- Include @babel/preset-react inside my babel config
+- Install @testing-library/jest-dom 
